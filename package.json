@@ -42,7 +42,10 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "compass-mixins": "^0.12.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3"
   }
 }

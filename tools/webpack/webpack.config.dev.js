@@ -7,16 +7,18 @@ module.exports = {
   output: {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
+    publicPath: '/',
   },
   plugins: require('./webpack.plugins'),
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.scss'],
     alias: require('./webpack.aliases'),
   },
   stats: 'errors-warnings',
   devtool: 'cheap-module-source-map',
   devServer: {
     open: true,
+    historyApiFallback: true
   },
   optimization: {
     splitChunks: {
